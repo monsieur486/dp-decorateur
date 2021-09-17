@@ -1,7 +1,7 @@
-package com.mr486.pizzahut.facture.ingredient;
+package com.mr486.pizzahut.ingredient;
 
-import com.mr486.pizzahut.facture.Dessert;
-import com.mr486.pizzahut.facture.Ingredient;
+import com.mr486.pizzahut.Dessert;
+import com.mr486.pizzahut.Ingredient;
 
 public class BouleVanille extends Ingredient
 {

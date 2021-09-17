@@ -1,6 +1,6 @@
-package com.mr486.pizzahut.facture.dessert;
+package com.mr486.pizzahut.dessert;
 
-import com.mr486.pizzahut.facture.Dessert;
+import com.mr486.pizzahut.Dessert;
 
 public class Gaufre extends Dessert
 {

@@ -1,4 +1,4 @@
-package com.mr486.pizzahut.facture;
+package com.mr486.pizzahut;
 
 public abstract class Ingredient extends Dessert
 {

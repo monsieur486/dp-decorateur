@@ -1,11 +1,10 @@
 package com.mr486.pizzahut;
 
-import com.mr486.pizzahut.facture.Dessert;
-import com.mr486.pizzahut.facture.dessert.Crepe;
-import com.mr486.pizzahut.facture.dessert.Gaufre;
-import com.mr486.pizzahut.facture.ingredient.BouleVanille;
-import com.mr486.pizzahut.facture.ingredient.Chantilly;
-import com.mr486.pizzahut.facture.ingredient.Chocolat;
+import com.mr486.pizzahut.dessert.Crepe;
+import com.mr486.pizzahut.dessert.Gaufre;
+import com.mr486.pizzahut.ingredient.BouleVanille;
+import com.mr486.pizzahut.ingredient.Chantilly;
+import com.mr486.pizzahut.ingredient.Chocolat;
 
 public class Main {
 
