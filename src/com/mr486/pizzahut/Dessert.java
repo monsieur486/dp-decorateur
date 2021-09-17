@@ -5,60 +5,64 @@ import java.text.DecimalFormat;
 /**
  * The type Dessert.
  */
-public abstract class Dessert {
-  private static final DecimalFormat format = new DecimalFormat("####0.00");
-  private String libelle; // Libellé du dessert.
-  private double prix; // Prix du dessert.
+public abstract class Dessert
+{
+	private String libelle;// Libellé du dessert.
+	private double prix;// Prix du dessert.
 
   /**
-   * Accesseurs en lecture pour le libellé.
+   * Gets libelle.
    *
-   * @return le libellé
+   * @return the libelle
    */
-  public String getLibelle() {
-    return libelle;
-  }
+// Accesseurs en lecture pour le libellé et le prix.
+	public String getLibelle()
+	{
+		return libelle;
+	}
 
+  /**
+   * Gets prix.
+   *
+   * @return the prix
+   */
+  public double getPrix()
+	{
+		return prix;
+	}
 
   /**
    * Sets libelle.
    *
-   * @param libelle le libellé
+   * @param libelle the libelle
    */
-  protected void setLibelle(String libelle) {
-    this.libelle = libelle;
-  }
+// Accesseurs en écriture pour le libellé et le prix.
+	protected void setLibelle(String libelle)
+	{
+		this.libelle = libelle;
+	}
 
   /**
-   * Accesseurs en lecture pour le prix.
+   * Sets prix.
    *
-   * @return le prix
+   * @param prix the prix
    */
-  public double getPrix() {
-    return prix;
-  }
+  protected void setPrix(double prix)
+	{
+		this.prix = prix;
+	}
 
-  /**
-   * Accesseurs en écriture pour le prix.
-   *
-   * @param prix le prix
-   */
-  protected void setPrix(double prix) {
-    this.prix = prix;
-  }
+	private static final DecimalFormat format = new DecimalFormat("####0.00");
 
-  /**
-   * Affiche facture.
-   *
-   * @return affichage complet de la facture
-   */
-  public String toString() {
-    var sb = new StringBuilder(getLibelle());
-    sb.append(" Total: ");
-    sb.append(format.format(getPrix()));
-    sb.append("€ dont ");
-    sb.append(format.format((getPrix() - getPrix() / (1 + config.taux_tva))));
-    sb.append("€ de TVA");
-    return sb.toString();
-  }
+	// Méthode utilisée pour l'affichage d'un dessert.
+	public String toString()
+	{
+		var sb = new StringBuilder(getLibelle());
+		sb.append(": ");
+		sb.append(format.format(getPrix()));
+		sb.append("€ dont ");
+		sb.append(format.format((getPrix()-getPrix()/(1 + config.taux_tva))));
+		sb.append("€ de TVA");
+		return sb.toString();
+	}
 }
