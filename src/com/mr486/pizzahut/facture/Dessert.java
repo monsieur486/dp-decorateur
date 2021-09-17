@@ -33,6 +33,6 @@ public abstract class Dessert
 	{
 		NumberFormat format=NumberFormat.getInstance();
 		format.setMinimumFractionDigits(2);// 2 chiffres après la virgule suffisent pour l'affichage.
-		return getLibelle()+" : "+format.format(getPrix())+"€";
+		return getLibelle()+" Total: "+format.format(getPrix())+"€";
 	}
 }
