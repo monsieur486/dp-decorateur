@@ -52,7 +52,7 @@ public abstract class Dessert
 		this.prix = prix;
 	}
 
-	private static DecimalFormat format = new DecimalFormat("#.##");
+	private static final DecimalFormat format = new DecimalFormat("####0.00");
 
 	// Méthode utilisée pour l'affichage d'un dessert.
 	public String toString()
