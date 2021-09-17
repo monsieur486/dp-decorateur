@@ -61,7 +61,7 @@ public abstract class Dessert
 		sb.append(" Total: ");
 		sb.append(format.format(getPrix()));
 		sb.append("€ dont ");
-		sb.append(format.format((getPrix()-getPrix()/1.2)));
+		sb.append(format.format((getPrix()-getPrix()/(1 + config.taux_tva))));
 		sb.append("€ de TVA");
 		return sb.toString();
 	}
