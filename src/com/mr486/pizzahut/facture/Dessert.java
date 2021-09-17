@@ -33,6 +33,12 @@ public abstract class Dessert
 	{
 		NumberFormat format=NumberFormat.getInstance();
 		format.setMinimumFractionDigits(2);// 2 chiffres après la virgule suffisent pour l'affichage.
-		return getLibelle()+" Total: "+format.format(getPrix())+"€";
+		var sb = new StringBuilder(getLibelle());
+		sb.append(" Total: ");
+		sb.append(format.format(getPrix()));
+		sb.append("€ dont ");
+		sb.append(format.format((getPrix()-getPrix()/1.2)));
+		sb.append("€ de TVA");
+		return sb.toString();
 	}
 }
