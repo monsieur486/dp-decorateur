@@ -6,8 +6,16 @@ import com.mr486.pizzahut.ingredient.BouleVanille;
 import com.mr486.pizzahut.ingredient.Chantilly;
 import com.mr486.pizzahut.ingredient.Chocolat;
 
+/**
+ * The type Main.
+ */
 public class Main {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         // Création et affichage d'une gaufre au Nutella.
         Dessert d1 = new Gaufre();
