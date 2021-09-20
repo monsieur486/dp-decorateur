@@ -5,14 +5,12 @@ import com.mr486.pizzahut.Dessert;
 /**
  * The type Gaufre.
  */
-public class Gaufre extends Dessert
-{
+public class Gaufre extends Dessert {
 
-  /**
-   * Instantiates a new Gaufre.
-   */
-  public Gaufre()
-	{
+	/**
+	 * Instantiates a new Gaufre.
+	 */
+	public Gaufre() {
 		setLibelle("Gaufre");
 		setPrix(1.80);
 	}

@@ -3,10 +3,9 @@ package com.mr486.pizzahut;
 /**
  * The type Ingredient.
  */
-public abstract class Ingredient extends Dessert
-{
+public abstract class Ingredient extends Dessert {
   /**
-   * The Dessert.
+   * The InterfaceModeDessert.
    */
   protected Dessert dessert;
 
@@ -24,11 +23,12 @@ public abstract class Ingredient extends Dessert
    */
   public abstract String getNameIngredient();
 
-	public String getLibelle(){	return dessert.getLibelle()+", "+getNameIngredient();}
+  public String getLibelle() {
+    return dessert.getLibelle() + ", " + getNameIngredient();
+  }
 
-	public double getPrix()
-	{
-		return dessert.getPrix()+getPrixIngredient();
-	}
+  public double getPrix() {
+    return dessert.getPrix() + getPrixIngredient();
+  }
 
 }
