@@ -18,8 +18,10 @@ public class Main {
    */
   public static void main(String[] args) {
 
-    // Création et affichage d'une gaufre au Nutella.
+    // Création et affichage d'une gaufre.
     Dessert d1 = new Gaufre();
+    System.out.println(d1);
+    // Création et affichage d'une gaufre au Nutella.
     d1 = new Chocolat(d1);
     System.out.println(d1);
     // Création et affichage d'une crêpe au Nutella et chantilly.
